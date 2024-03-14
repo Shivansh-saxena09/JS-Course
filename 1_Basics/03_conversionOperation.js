@@ -22,3 +22,26 @@ let booleanIsLoggedIn =  Boolean(isLoggedIn);
  let someNumber = 67;
   let stringNumber = String(someNumber)
   console.log(typeof(stringNumber));
+
+
+
+
+  /* Operations*/
+
+  let str1 = "hey";
+  let str2 = " Shivansh";
+
+  str3 = str1 + str2 ;
+  console.log(str3);
+
+
+  console.log("1"+ 2);
+  console.log(1+"2");
+  console.log("1"+2+3);
+  console.log(1+2+"6");
+
+
+  let gameCounter = 100;
+  ++gameCounter;
+  console.log(gameCounter);
+
