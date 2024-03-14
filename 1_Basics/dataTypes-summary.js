@@ -31,3 +31,15 @@ let myObj ={
 const myFunction = function () {
  console.log('hello world')
 }
+
+
+//--------------------------Memories----------------------------------------
+
+// Stack (Primitive data type me use hoti hai)
+// Heap(Non Primitive type me use hoti hai)
+
+let myname ="Shivansh";
+ let anotherName = myname;
+ anotherName = "ulti baalti";
+  console.log(myname);
+  console.log(anotherName)
