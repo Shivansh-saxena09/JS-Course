@@ -52,3 +52,17 @@ console.log(Object.entries(fbUser)) // it will make all the keys with value in a
 console.log(fbUser.hasOwnProperty('isLoggedI')) // it will check is this property  is avialbake in your object or not .
 
 
+
+// Destructuring in Objects.
+
+const bike ={
+    name:"Gt650",
+    price:"450000",
+    company:"Royal Enfield",
+}
+console.log(bike.price) // this older way to access any valye or anu object.
+ const {name} = bike; // but when we used destrctrucring like this then we only used value name to use it.
+ const {name:naam} = bike;// thhis also a way .
+ console.log(naam);
+
+
