@@ -23,8 +23,7 @@ console.log("Result:", result); // function will return their functioning and af
 
 
 
-function addTWoNumbers(num1, num2) {
-  return num1 + num2;
+function addTWoNumbers(num1, num2) {  return num1 + num2;
 }
 //   const result =   addTWoNumbers(7,10)
 console.log("Result:", result); // this is the another way to resturning anything in a function
