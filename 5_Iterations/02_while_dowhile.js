@@ -20,6 +20,6 @@ arr++
 
  let marks =21
 do {
-    console.log(`marks is :${marks}`)
+    // console.log(`marks is :${marks}`)
     marks++
 } while (marks<20);
