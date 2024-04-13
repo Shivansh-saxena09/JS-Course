@@ -316,7 +316,7 @@ button:hover {
 ```
 
 ```javascript
-------------------------Javascript----------------------------
+------------------------Javascript--------------------------
 
 const form = document.querySelector('form');
 // ths use case  will give empty values
