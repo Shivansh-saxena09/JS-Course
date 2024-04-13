@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to create Node list Programtically</title>
+</head>
+<body style="background-color: black; color: white;">
+
+    <script>
+    const myDiv =  document.createElement('div')
+    console.log(myDiv);
+    myDiv.className='main'
+    myDiv.id = Math.round(Math.random()*10+1)
+
+    myDiv.setAttribute("title","My new Title")
+    myDiv.style.backgroundColor = "orange"
+    myDiv.style.padding = "15px"
+    const addText=  document.createTextNode("hey shivansh wasss up")
+    myDiv.appendChild(addText)
+    document.body.appendChild(myDiv)
+    
+   
+    </script>
+    
+</body>
+</html>
