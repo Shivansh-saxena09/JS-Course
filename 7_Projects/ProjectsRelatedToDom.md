@@ -352,3 +352,160 @@ form.addEventListener('submit', (e) => {
 
 
 ```
+
+
+
+## Project -3 Digital Clock
+# Project -3 Code
+
+``` HTML
+---------------------HTML----------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Project - 3</a>
+      <a href="/page2.html">Digital Clock</a>
+    </nav>
+   <div class="centre">
+    <div id="banner"><span>Your Local Time</span></div>
+   <div class="container">
+    <div id="clock"></div>
+   </div>
+   </div>
+  </body>
+</html>
+
+
+```
+
+```CSS
+
+-------------------------------CSS----------------------
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    color: black;
+    background-color: white;
+  }
+  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    border-bottom: solid 1px #aaa;
+    background-color: #eee;
+  }
+  
+  nav a {
+    display: inline-block;
+    min-width: 9rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    border: solid 1px #aaa;
+    text-align: center;
+    text-decoration: none;
+    color: #555;
+  }
+  
+  nav a[aria-current='page'] {
+    color: #000;
+    background-color: #d4d4d4;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .centre {
+    text-align: center;
+}
+
+#banner {
+    background-color: #333;
+    color: #fff;
+    padding: 25px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 3rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Adjust as needed */
+  }
+  
+  #clock {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: yellow;
+    color: black;
+    font-size: 30px;
+    line-height: 200px;
+    text-align: center; /* Added to center text horizontally */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+
+@media (max-width: 768px) {
+    #clock {
+        width: 150px;
+        height: 150px;
+        font-size: 20px;
+        line-height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    #clock {
+        width: 100px;
+        height: 100px;
+        font-size: 16px;
+        line-height: 100px;
+    }
+}
+```
+
+```javascript
+
+-----------------------------Javascript-----------------------
+
+const clock = document.getElementById('clock')
+
+
+setInterval(()=>{
+    let date = new Date();
+    // console.log(date.toLocaleString())
+    clock.innerHTML = date.toLocaleTimeString();
+},1000)
+
+```
